@@ -1,0 +1,67 @@
+/*
+ * /sass/settings/_fonts.scss - Global fonts variables
+ * by Gabriel!
+ */
+//General font
+$textFont: Roboto, "Helvetica neuea" ,Helvetica, Arial, sans-serif;
+
+/*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face {
+    font-family: "Ionicons";
+    src: url("../fonts/ionicons/ionicons.eot?v=2.0.0");
+    src: url("../fonts/ionicons/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../fonts/ionicons/ionicons.ttf?v=2.0.0") format("truetype"),
+    url("../fonts/ionicons/ionicons.woff?v=2.0.0") format("woff"),
+    url("../fonts/ionicons/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Fontawesome
+@font-face {
+    font-family: 'Glyphs';
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontawesome/fontawesome-webfont.woff2') format('woff2'),
+         url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'),
+         url('../fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('../fonts/arimo/arimo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/arimo/arimo-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('../fonts/arimo/arimo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/arimo/arimo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster/lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

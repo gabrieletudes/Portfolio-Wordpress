@@ -1,0 +1,532 @@
+/* sass-intro
+*
+* /sass/styles.scss - Main stylesheet
+* by Gabriel
+*/
+
+// Settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/size";
+
+// Generic
+@import "generic/meyer-reset";
+@import "generic/reset";
+@import "generic/hidden";
+
+/*wrapper*/
+body{
+font-family: 'Arimo', "Helvetica neue", "Helvetica", sans-serif;
+}
+a{
+    color: $textLink;
+}
+.wrapper {
+background-color: $backgroundColorLight;
+line-height: 1.5;
+&--light-bg{
+    background-color: $backgroundColorLight;
+}
+&--dark-bg{
+    background-color: $backgroundColorDark;
+}
+}
+
+//header
+header {
+    background-color: $backgroundColorDark;
+}
+nav {
+    background-color: $backgroundColorDark;
+    margin: 0 auto;
+    max-width: 940px;
+    min-height: 70px;
+    padding: 20px;
+}
+.main-nav{
+    &__logo {
+        display: inline-block;
+        list-style: none;
+        font-size: 24px;
+        font-weight: bold;
+        & a{
+            text-transform: uppercase;
+            color: #E69E40;
+            text-decoration: none;
+        }
+    }
+    &__list{
+        width: 100%;
+    }
+    &__elt{
+        display: inline-block;
+        float: right;
+    }
+&__link{
+    color: white;
+    font-size: 19px;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 5px;
+    line-height: 2;
+&:hover{
+    color: $textLink;
+}
+&::before{
+    font-family: "Ionicons";
+    margin-right: 5px;
+}
+&--icon-home::before{
+    content: "";
+}
+&--icon-projects::before{
+    content: "";
+}
+&--icon-about::before{
+    content: "";
+}
+&--icon-contact::before{
+    content: "";
+}
+}
+}
+.phrase {
+    display: block;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 860px;
+    min-height: auto;
+    padding-bottom: 100px;
+    padding-top: 120px;
+&__content {
+    color: white;
+    display: block;
+    font-family: 'Arimo';
+    font-size: 37px;
+    font-weight: bold;
+    max-width: 330px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+}
+.bouton__callout {
+    background-color: $buttonBcgColor;
+    border-radius: 74px;
+    color: white;
+    font-size: 1.1em;
+    margin: 50px 0;
+    padding: 15px 20px;
+    text-decoration: none;
+&:hover{
+    background-color: $buttonHoverColor;
+}
+}
+
+//about
+.about{
+color: white;
+&__wrapper{
+    display: inline-block;
+    width: 100%;
+}
+&__name {
+    background-color: $backgroundColorName;
+    display: block;
+    font-family: 'Arimo';
+    font-size: 31px;
+    font-weight: normal;
+    padding: 10px 30px;
+    text-align: center;
+}
+&__article {
+    display: block;
+    margin: 80px auto;
+    max-width: 846px;
+    overflow: hidden;
+    padding: 25px;
+}
+&__title {
+    color: #4a4a4a;
+    font-family: Lobster;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-left: 220px;
+    margin-top: 20px;
+}
+&__heading{
+    background-image: url("../img/triangel_green.png");
+    background-repeat: no-repeat;
+    color: white;
+    display: block;
+    font-family: lobster;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    line-height: 5;
+    margin: -30px auto -230px;
+    max-width: 400px;
+    min-height: 254px;
+    text-align: center;
+}
+&__figure {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-right: -190px;
+& img {
+        display: block;
+}
+}
+//about__content
+& p {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 413px;
+}
+&__tools {
+    background-color: #eee;
+    border-top: 1px solid #bbb;
+    display: block;
+    float: left;
+    margin-top: 80px;
+    //padding-bottom: 20px;
+    //padding-left: 230px;
+    width: 100%;
+&--penp-icon::before{
+    content: "";
+    font-family: "Ionicons";
+}
+&--sketch-icon::before{
+    content: "";
+    font-family: "Glyphs";
+}
+&--atom-icon::before{
+    content: "";
+    font-family: "Icomoon";
+}
+&--sass-icon::before{
+    content: "";
+    font-family: "Ionicons";
+}
+&--wordprs-icon::before{
+    content: "";
+    font-family: "Ionicons";
+}
+&-heading {
+    color: #4a4a4a;
+    font-family: 'Lobster';
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    width: 89%;
+    margin: 20px auto auto;
+}
+& a{
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 30px;
+    text-decoration: none;
+    margin: 2% 3% 4% 7%;
+    text-align: center;
+&::before {
+    color: $textLink;
+    display: block;
+    font-size: 40px;
+    text-align: center;
+}
+}
+}
+&__container {
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    color: #4a4a4a;
+    float: right;
+    margin: 67px 0 0;
+    max-width: 667px;
+    min-height: 290px;
+}
+}
+
+//Projects
+.projects{
+&__heading {
+    background-image: url("../img/triangel_green.png");
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Lobster';
+    font-size: 40px;
+    font-weight: 200;
+    left: 50%;
+    letter-spacing: 4px;
+    line-height: 5;
+    margin-left: -200px;
+    margin-top: -40px;
+    min-height: 255px;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    z-index: 4;
+}
+&__wrapper {
+    display: inline-block;
+    width: 100%;
+    &--triangle-one{
+        background-image: url("../img/triangle_blue_left.png"), url("../img/triangle_red_right.png");
+        background-position: 10% 80%, 85% 10%;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+    }
+    &--triangle-two{
+        background-image: url("../img/triangle_yellow_left.png"), url("../img/triangle_green_right.png");
+        background-position: 15% 10%, 95% 80%;
+        background-repeat: no-repeat;
+    }
+}
+}
+
+//project
+.project{
+&__figure {
+    display: inline-block;
+    float: right;
+    margin-right: -10px;
+&--to-left{
+    float: none;
+    margin-left: -10px;
+}
+&--dark-bg{
+    background-color: red;
+}
+}
+&__figure img{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}
+&__article {
+    display: block;
+    //max-height: 100%;
+    margin: 100px auto;
+    max-width: 890px;
+    overflow: hidden;
+    padding: 25px;
+    position: relative;
+    z-index: 10;
+}
+&__container {
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    color: black;
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 470px;
+    padding: 30px 35px;
+    min-height: 290px;
+&--to-left{
+    float: left;
+}
+}
+&__description {
+    font-family: 'Arimo';
+    font-size: 16px;
+    line-height: 1.5;
+    width: 400px;
+}
+&__links {
+    display: inline-block;
+    margin-top: 30px;
+}
+&__link{
+&-github{
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 24px;
+    color: #333;
+    font-size: 1.2em;
+    height: 40px;
+    margin-right: 30px;
+    padding: 12px 15px 8px;
+    text-decoration: none;
+    width: 140px;
+}
+&-github:hover, &-github:focus {
+    background-color: #c3c3c3;
+}
+&-github::before{
+    font-family: "Glyphs";
+    content: " ";
+    font-size: 24px;
+}
+&-live {
+    background-color: $buttonBcgColor;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 12px 15px 8px;
+    text-decoration: none;
+}
+&-live:hover{
+    background-color: $buttonHoverColor;
+}
+&-live::before{
+    font-family: "Ionicons";
+    content: " ";
+    font-size: 24px;
+}
+}
+&__heading {
+    display: inline-block;
+    font-family: lobster;
+    font-size: 1.875em;
+    margin-bottom: 20px;
+& a{
+    color: #4a4a4a;
+    text-decoration: none;
+}
+}
+& img {
+    box-shadow: 0 0 4px 1px #232323;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+}
+
+//Contact
+.contact{
+&__wrapper{
+    display: inline-block;
+    width: 100%;
+}
+&__heading {
+    background-image: url("../img/triangle_green_about.png");
+    background-repeat: no-repeat;
+    font-family: lobster;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    line-height: 5;
+    margin-top: -150px;
+    min-height: 205px;
+    position: absolute;
+    text-align: center;
+    width: 360px;
+}
+&__article {
+    color: #4a4a4a;
+    display: block;
+    margin: 80px auto;
+    max-width: 910px;
+    overflow: hidden;
+    padding: 25px;
+}
+//contact content
+& p {
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+&__container {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    color: #0c0c0c;
+    min-height: 420px;
+    min-width: 100%;
+    padding: 40px 30px;
+}
+}
+//form
+.form{
+&__label{
+    color: white;
+    display: block;
+    margin-top: 20px;
+}
+&__input {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
+    color: #4a4a4a;
+    font-family: 'Arimo';
+    font-size: 0.9em;
+    margin-top: 15px;
+    min-height: 40px;
+    padding: 2px 10px;
+    width: 260px;
+&:focus{
+    border: 3px solid #2baabc;
+}
+}
+&__nom {
+    display: inline-block;
+    float: left;
+}
+&__email {
+    display: inline-block;
+    clear: left;
+    float: left;
+}
+&__message {
+    display: inline-block;
+    margin-left: 100px;
+}
+&__textarea{
+    border: 3px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
+    color: #4a4a4a;
+    font-family: 'Arimo';
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-top: 15px;
+    min-height: 175px;
+    padding: 12px;
+    resize: none;
+    width: 440px;
+&:focus{
+    border: 3px solid #2baabc;
+}
+}
+&__button{
+    display: inline-block;
+    float: right;
+}
+&__submit{
+   background-color: #ff4e50;
+   border: medium none;
+   border-radius: 50px;
+   color: white;
+   font-size: 1.1em;
+   font-weight: normal;
+   margin-top: 20px;
+   padding: 7px 10px;
+&:hover{
+    background-color: #cf4445;
+}
+}
+}
+//contact form 7
+//hidde the text for humans
+.screen-reader-response,.wpcf7-response-output{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+.wpcf7-not-valid-tip {
+    color: $errorColor;
+    display: block;
+    margin-top: 5px;
+}
+
+.wpcf7-not-valid {
+    border: 3px solid;
+    color: $errorColor;
+}
+
+.screen-reader-response, .wpcf7-validation-errors{
+    color: $errorColor;
+}

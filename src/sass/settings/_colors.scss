@@ -1,0 +1,28 @@
+ /*
+ * /sass/settings/_colors.scss - Global color variables
+ * by Gabriel
+ */
+
+
+//backgroundColors
+$backgroundColorDark: #27384D;
+$backgroundColorLight: #EAEAEA;
+$backgroundColorName: #28775A;
+
+
+//Text color
+$textLink: $backgroundColorName;
+$textColor: #4A4A4A;
+
+//buttons
+$buttonBcgColor: #CB4B4B;
+$buttonHoverColor: darken($buttonBcgColor,5%);
+
+//errors
+$errorColor: #F09697;
+
+//focus color
+$focusBorderColor: #2BAABC;
+
+//shadow
+$theShadow: rgba(0, 0, 0, 0.5);
