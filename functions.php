@@ -101,4 +101,4 @@ function b_get_menu_items( $location )
       return $navItems;
 }
 
-define( 'WPCF7_AUTOP', false );
+//define( 'WPCF7_AUTOP', false );
